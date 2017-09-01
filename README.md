@@ -2,32 +2,16 @@
 
 __Configured for MY Tevo Tarantula. It works for me, it may not work for you!__
 
-See example_configurations/Tevo Tarantula for other Tarantula configurations:
+Do not use the configuration files in the main Marlin folder. Copy the configuration
+files from the "example configurations/TEVO Tarantula" folder.
 
-- Tarantula-01
-  - Manual bed level (no Z probe)
-- Tarantula-02
-  - BLTouch
-- Tarantula-03 (contributed by Roy Gilby)
-  - BLTouch, Thermistor for Genuine E3Dv6, Software PWM Layer Fan
-- Tarantula-04 (contributed by Rob Flip)
-  - SN04 probe
+Open configuration.h file in a text editor and make the changes at the top (EasyConfig)
+section of the file. You should not have to make any other changes.
 
-All example configurations have SD support and EEPROM enabled.
+See [this video](https://youtu.be/-sQ8p00pG5E) for an excellent tutorial on using this firmware.
 
-To set the bed size (large or small) after copying the configuration files that are appropriate to your
-printer, edit the "configuration.h" and look for these line:
-```
-// The size of the print bed
-#define X_BED_SIZE 200
-#define Y_BED_SIZE 200
-```
-Change the bed size values to match your bed.
-
-If you have a Z-Probe, you must set your offsets and probe boundaries.
-  
-Do you have a configuration for the Tarantula that is not covered above? Would
-you like to share it with others by having it added to the above examples?
+Do you have a configuration for the Tarantula that is not covered in the EasyConfig? Would
+you like to share it with others by having it added to the EasyConfig?
 If so, please contact me at jb.github (at) rcairgallery (dot) com and we'll work something
 out. (Note: Please do not contact me for support questions. I'm afraid I just do not have
 the time for answering such inquiries. Best bet is to ask in the Tevo Tarantuala
@@ -36,7 +20,6 @@ Facebook group at https://www.facebook.com/groups/TEVO.3dprinter.owners/.)
 Thanks!
 
 ============================================================================
-
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
