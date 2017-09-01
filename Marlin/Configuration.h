@@ -46,32 +46,32 @@
 #define SDSUPPORT
 #define CHANGE_Y_DIRECTION    // If your bed homes in the wrong direction front to back, enable this.
 //#define HOTEND_E3DV6        // Genuine E3D v6 hotend. Also enables Fan Soft PWM
-#define FULL_GRAPHIC_SMART  // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The stock
+//#define FULL_GRAPHIC_SMART  // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The stock
                               // stock controller is a RepRap Discount Smart Controller)
 
 // Offset from endpoints to get nozzle to 0,0 (front/left of bed)
 // (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
-#define NOZZLE_X          0
-#define NOZZLE_Y          0
+#define NOZZLE_X          -2
+#define NOZZLE_Y          -4
 
 // Primary Extruder steps per mm
 // (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
-#define E1_STEPS      100 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
+#define E1_STEPS      96.1261 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
 //#define CHANGE_E1_DIRECTION   // If your extruder is going backwards, enable this.
 
 // Z-Probe type (must be none or one of them)
 // If you enable a Z-Probe, be sure to disable the MANUAL bed leveling type and select
 // one of the other bed leveling types below.
-//#define BLTOUCH
+#define BLTOUCH
 //#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 
 // Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
 // Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        1
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
+#define SENSOR_FRONT      36
 #define SENSOR_BEHIND      0
 
 // Margin around perimiter of bed for probing (will not probe outside this margin)
@@ -81,11 +81,11 @@
 //#define TRIPOINT
 //#define LINEAR
 //#define BILINEAR
-//#define UBL
-#define MANUAL // Do NOT use if you have a Z-Probe
+#define UBL
+//#define MANUAL // Do NOT use if you have a Z-Probe
 // Number of grid points in each direction
 // Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
-#define GRID_POINTS        3
+#define GRID_POINTS        10
 
 //Enable this to turn on support for a dual nozzle with two separate extruders
 //#define DUAL_EXTRUDER
@@ -113,8 +113,8 @@
 
 // Extra movement of Y axis (small bed only). Can help with probing more of the bed.
 // Set both to 0 (zero) if you have a large bed or do not have a Z-Probe.
-#define XTRA_BED_FRONT     0 // Distance bed can move towards the front past Y = 200
-#define XTRA_BED_BACK      0 // Distance bed can move towards the back past Y = 0
+#define XTRA_BED_FRONT    55 // Distance bed can move towards the front past Y = 200
+#define XTRA_BED_BACK     5  // Distance bed can move towards the back past Y = 0
 
 /************************ END OF EASY CONFIG ***************************
 //======================================================================
